@@ -24,7 +24,7 @@ function App() {
             {(type === "")?(data.map( (con,i) => (
               <li key={i} className="nav-item"><button key={i} className={`btn btn-header ${con.type}`} id={con.type} onClick={() => setType(con.type)}>{con.type}</button></li>
             ))) : null}
-            <li className="nav-item"><button className="btn btn-header" id = "" onClick={() => setType("")}>See all</button></li>
+            {(type !== "")?(<li className="nav-item"><button className="btn btn-header" id = "" onClick={() => setType("")}>See all</button></li>):null}
           </ul>
         </nav>
       </header>
