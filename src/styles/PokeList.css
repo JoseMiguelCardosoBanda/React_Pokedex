@@ -1,0 +1,17 @@
+.pokemon-todos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 470px) {
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

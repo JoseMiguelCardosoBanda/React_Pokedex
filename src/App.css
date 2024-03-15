@@ -1,0 +1,79 @@
+:root {
+  --clr-black: #1c1c1c;
+  --clr-gray: #ececec;
+  --clr-white: #f7f7f7;
+
+  --type-normal: #A8A878;
+  --type-fire: #F08030;
+  --type-water: #6890F0;
+  --type-grass: #78C850;
+  --type-electric: #F8D030;
+  --type-ice: #98D8D8;
+  --type-fighting: #C03028;
+  --type-poison: #A040A0;
+  --type-ground: #E0C068;
+  --type-flying: #A890F0;
+  --type-psychic: #F85888;
+  --type-bug: #A8B820;
+  --type-rock: #B8A038;
+  --type-ghost: #705898;
+  --type-dark: #705848;
+  --type-dragon: #7038F8;
+  --type-steel: #B8B8D0;
+  --type-fairy: #F0B6BC;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+header {
+  padding-block: 1rem;
+  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 36, 0, 0.85);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-inline: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.btn-header {
+  background-color: var(--clr-gray);
+  padding: 0.5rem;
+  border-radius: 100vmax;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-header:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-out;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
