@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../styles/PokeModal.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-function PokeModal({open, onClose, PokeIMG, PokeShiny, PokeID, PokeName, PokeTypes, PokeAbilities}) {
+function PokeModal({open, onClose, PokeIMG, PokeShiny, PokeID, PokeName, PokeTypes, PokeAbilities, PokeCry}) {
   const [shiny, toggleShiny] = useState(false);
   if(!open) return null
 
@@ -58,6 +58,12 @@ function PokeModal({open, onClose, PokeIMG, PokeShiny, PokeID, PokeName, PokeTyp
               <div className="poke-type" dangerouslySetInnerHTML={{__html:PokeTypes}}></div>
               <div className="region">Origin Region: {region()}</div>
               <div className="poke-abilities" dangerouslySetInnerHTML={{__html:PokeAbilities}}></div>
+              <div className="cry-container">
+                <audio controls>
+                  <source src={PokeCry} type="audio/ogg" />
+                  Your browser does not support the audio element
+                </audio>
+              </div>
             </div>
           </div>
         </div>

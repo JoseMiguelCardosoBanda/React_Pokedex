@@ -85,6 +85,7 @@ function PokeList() {
           Height = {PokeAlt(poke.height)}
           Weight = {PokePeso(poke.weight)}
           Abilities = {habilidades(poke.abilities)}
+          Cry={poke.cries.latest}
         />
         ))
       }

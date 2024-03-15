@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import "../styles/PokeCard.css";
 import PokeModal from "./PokeModal";
 
-function PokeCard({ ID, IMG, Shiny, Name, Types, Height, Weight, Abilities}) {
+function PokeCard({ ID, IMG, Shiny, Name, Types, Height, Weight, Abilities, Cry}) {
   const [openModal, setOpenModal] = useState(false);
 
 
@@ -34,6 +34,7 @@ function PokeCard({ ID, IMG, Shiny, Name, Types, Height, Weight, Abilities}) {
         PokeName={Name}
         PokeTypes={Types}
         PokeAbilities={Abilities}
+        PokeCry={Cry}
       />, document.body)}
     </div>
     

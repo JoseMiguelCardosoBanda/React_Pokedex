@@ -92,6 +92,7 @@ function PokeFilters({ botonID }) {
             Height = {PokeAlt(pkmn.height)}
             Weight = {PokePeso(pkmn.weight)}
             Abilities={habilidades(pkmn.abilities)}
+            Cry={pkmn.cries.latest}
           />
         ))}
       </div>
