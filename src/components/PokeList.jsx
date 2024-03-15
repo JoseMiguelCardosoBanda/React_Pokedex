@@ -25,8 +25,9 @@ function PokeList() {
     }else if (pokeId.length === 2){
       pokeId = "0" + pokeId;
       return(pokeId);
+    }else{
+      return(pokeId)
     }
-    return(pokeId)
   }
 
   function Tipos(types) {
