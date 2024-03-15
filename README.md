@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# React Pokédex App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### This project was created using React 18.2.0, as well the React Hooks: useState, useEffect; and the React icons library.
+#### The IDE used was Visual Studio Code.
+#### Also, all the displayed information was retrieved from the PokéAPI RESTful API.
 
-## Available Scripts
+## Explaining the App
 
-In the project directory, you can run:
+At first, the app shows a list that contains all the existing pokémon from the Red and Blue games to the recent Scarlet and Violet games,
+they are all ordered by their national pokédex entry number in a card format, where an image and some of their characteristics as their type, 
+height and weight can be found.
 
-### `npm start`
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/12729e17-35b6-4f89-b07b-c52c2685010f)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/75944fee-2e5c-43bb-9871-d72abc7ddf66)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### The Buttons on the Navbar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The buttons that are placed in the navbar, contain one of the eighteen types that exists, when the user clicks one of them,
+the list will change, and now it will show all the pokémon that have the type that was clicked, also at the left side it can be seen how many
+pokémon have that type, for example, if the user clicks on the psychic button, it will display the list of all the pokémon that have the psychic type.
 
-### `npm run build`
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/ebb49089-c927-4517-972d-6da250be7096)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/90562218-1bb4-4539-8988-025829c93501)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Note: The images only display some pokémon for the example.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Also, when a type button is clicked, all the other buttons disappear and the only button which can be seen is the "see all" button,
+so the user go back to the complete list before he can click another button.
 
-### `npm run eject`
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/66f1cc98-3137-4d88-bff0-f10a6b0954ac)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### The Cards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+As the list shows up, it can be seen that all the pokémon have their information and image in a little card, so, to see more info about a
+certain pokémon, when the user clicks a card from the list, a popup with more info will be displayed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/c3d4882b-f6f9-43fd-b7dd-626db762c5a1)
 
-## Learn More
+As can be seen in the image, the popup displays the entry number of the pokédex for the pokémon, the type, it origin region, the abilities that the
+pokémon can have in the games that it appears, a media player that plays the pokémon's cry, also, the image is interactive, when the user clicks it,
+the image changes to the shiny version of the pokémon, when the mouse hovers the image, the hint is displayed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/c9c1c0a2-ee61-46ed-99c2-11a04acc938f)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/JoseMiguelCardosoBanda/React_Pokedex/assets/104933197/cf6c7fb4-2a21-415c-b9de-e64c0d0f223f)
