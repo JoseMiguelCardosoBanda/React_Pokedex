@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import pokedex_logo from "./img/logo.png";
 import PokeFilters from "./components/PokeFilters";
@@ -9,11 +9,6 @@ function App() {
 
   const [data] = useState(JsonData["type_list"]);
   const [type, setType] = useState("");
-  let prevButtonRef = useRef("");
-
-  useEffect(() => {
-    prevButtonRef.current = type;
-  },[type])
 
   return(
     <div className="App">
