@@ -35,7 +35,7 @@ function PokeModal({open, onClose, PokeIMG, PokeShiny, PokeID, PokeName, PokeTyp
     }else if(PokeID >= "899" && PokeID <= "905"){
       pokeRegion = "Hisui"
       return(pokeRegion);
-    }else{
+    }else if(PokeID >= "906" && PokeID <= "1025"){
       pokeRegion = "Paldea"
       return(pokeRegion);
     }
